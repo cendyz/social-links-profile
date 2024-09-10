@@ -1,0 +1,64 @@
+@use "./utilities/reset";
+
+:root {
+	--green: hsl(75, 94%, 57%);
+	--white: hsl(0, 0%, 100%);
+	--grey-700: hsl(0, 0%, 20%);
+	--grey-800: hsl(0, 0%, 12%);
+	--grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2em;
+	height: 100vh;
+	background-color: var(--grey-900);
+	font-family: "Inter", system-ui;
+	font-size: 14px;
+}
+
+.box {
+	max-width: 350px;
+	padding: 2em;
+	background-color: var(--grey-800);
+	border-radius: 10px;
+	color: var(--white);
+	text-align: center;
+
+	&__img {
+		margin-bottom: 1.5em;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+
+	&__dest {
+		margin-top: 0.5em;
+		color: var(--green);
+		font-weight: 700;
+	}
+
+	&__desc {
+		margin-top: 2em;
+		color: rgb(255, 255, 255, 0.7);
+	}
+
+	&__links {
+		margin-top: 1.5em;
+		text-decoration: none;
+	}
+
+	&__link {
+		button {
+			margin: 0.5em 0;
+			padding: 1em 0;
+			width: 100%;
+			border-radius: 8px;
+			background-color: var(--grey-700);
+			color: var(--white);
+			font-weight: 700;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2em;
+  height: 100vh;
+  background-color: var(--grey-900);
+  font-family: "Inter", system-ui;
+  font-size: 14px;
+}
+
+.box {
+  max-width: 350px;
+  padding: 2em;
+  background-color: var(--grey-800);
+  border-radius: 10px;
+  color: var(--white);
+  text-align: center;
+}
+.box__img {
+  margin-bottom: 1.5em;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.box__dest {
+  margin-top: 0.5em;
+  color: var(--green);
+  font-weight: 700;
+}
+.box__desc {
+  margin-top: 2em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.box__links {
+  margin-top: 1.5em;
+  text-decoration: none;
+}
+.box__link button {
+  margin: 0.5em 0;
+  padding: 1em 0;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--grey-700);
+  color: var(--white);
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
